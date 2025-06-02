@@ -349,6 +349,12 @@
     </div>
   </section>
 
+ <!-- Vercel Analytics Script -->
+  <script type="module">
+    import { inject } from 'https://unpkg.com/@vercel/analytics';
+    inject();
+  </script>
+
   <script>
     // Simple animation on scroll
     document.addEventListener('DOMContentLoaded', function() {
