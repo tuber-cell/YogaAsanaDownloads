@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Download YogaAsana App</title>
-  <script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚨 YogaAsana - The LAST Yoga App You'll Ever Need</title>
+  <meta name="description" content="The elite 1% of yogis use this app. Your studio instructor won't tell you this exists.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+<script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
   <link rel="stylesheet" href="style.css">
@@ -14,25 +20,364 @@
     import { inject } from 'https://unpkg.com/@vercel/analytics';
     inject();
   </script>
+  <style>
+    :root {
+      --black: #000000;
+      --gold: #FFD700;
+      --red: #FF0000;
+      --dark-red: #CC0000;
+      --white: #FFFFFF;
+      --gray: #222222;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* HEADER */
+    .header {
+      background-color: var(--black);
+      border-bottom: 3px solid var(--gold);
+      padding: 15px 0;
+    }
+    
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2.5rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    .logo span {
+      color: var(--white);
+    }
+    
+    .header-cta {
+      background: var(--red);
+      color: var(--white);
+      font-weight: 900;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+    
+    .header-cta:hover {
+      background: var(--dark-red);
+      transform: translateY(-2px);
+    }
+    
+    /* HERO SECTION */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 0;
+      text-align: center;
+      border-bottom: 3px solid var(--gold);
+    }
+    
+    .hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4.5rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+      line-height: 1;
+    }
+    
+    .hero h2 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+    
+    .price-tag {
+      background: var(--gold);
+      color: var(--black);
+      font-weight: 900;
+      padding: 10px 25px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 30px;
+      font-size: 1.5rem;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: var(--red);
+      color: var(--white);
+      font-weight: 900;
+      font-size: 1.3rem;
+      padding: 15px 40px;
+      border-radius: 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      margin-bottom: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .cta-button:hover {
+      background: var(--dark-red);
+      transform: translateY(-3px);
+    }
+    
+    .small-text {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+    
+    /* FEATURES SECTION */
+    .features {
+      padding: 80px 0;
+      background-color: var(--gray);
+    }
+    
+    .section-title {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 3.5rem;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 60px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .feature-card {
+      background: var(--black);
+      border: 2px solid var(--gold);
+      padding: 30px;
+      text-align: center;
+    }
+    
+    .feature-icon {
+      font-size: 3rem;
+      color: var(--gold);
+      margin-bottom: 20px;
+    }
+    
+    .feature-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+    
+    /* TESTIMONIALS */
+    .testimonials {
+      padding: 80px 0;
+      background-color: var(--black);
+      border-top: 3px solid var(--gold);
+      border-bottom: 3px solid var(--gold);
+    }
+    
+    .testimonial-card {
+      background: var(--gray);
+      padding: 30px;
+      margin-bottom: 30px;
+      border-left: 5px solid var(--gold);
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--gold);
+    }
+    
+    /* CTA SECTION */
+    .final-cta {
+      padding: 100px 0;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .final-cta h2 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 4rem;
+      color: var(--red);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 3rem;
+      }
+      
+      .hero h2 {
+        font-size: 1.4rem;
+      }
+      
+      .section-title {
+        font-size: 2.5rem;
+      }
+      
+      .final-cta h2 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>🧘‍♀️ YogaAsana</h1>
-    <p>Improve your flexibility, calm your mind, and master yoga – all in one app.</p>
-
-    <a href="https://github.com/tuber-cell/YogaAsanaDownloads/releases/download/v1.0.0/YogaAsana.apk" class="download-button" download>⬇ Download YogaAsana APK</a>
-
-    <img src="yoga-screenshot.jpg" alt="YogaAsana App Preview" class="app-image">
-
-    <div class="instructions">
-      <h2>How to Install YogaAsana APK:</h2>
-      <ol>
-        <li>Tap the "Download APK" button above.</li>
-        <li>Once downloaded, open the file.</li>
-        <li>Allow installation from unknown sources if prompted.</li>
-        <li>Install and start your yoga journey with YogaAsana!</li>
-      </ol>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">YOGA<span>ASANA</span></div>
+      <a href="#download" class="header-cta">DOWNLOAD NOW</a>
     </div>
-  </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container">
+      <h1>STUDIO YOGA IS A SCAM</h1>
+      <h2>They Don't Want You To Know About This App</h2>
+      <p>Why pay ₹5000/month for studio classes when you can get BETTER results with YogaAsana for just ₹99? Your instructors are using this app - they just won't tell you.</p>
+      
+      <div class="price-tag">ONLY ₹99/MONTH</div>
+      
+      <a href="https://github.com/tuber-cell/YogaAsanaDownloads/releases/download/v1.0.0/YogaAsana.apk" class="cta-button" download>
+        ⬇ DOWNLOAD YOGASANA NOW
+      </a>
+      <p class="small-text">Join 113,000+ elite yogis who left studios behind</p>
+    </div>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">WHAT MAKES US DIFFERENT</h2>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💎</div>
+          <h3 class="feature-title">Elite-Level Training</h3>
+          <p>The exact same routines used by professional yogis and instructors. Your local studio can't compete.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">AI Pose Mastery</h3>
+          <p>Real-time feedback that corrects your form better than any human instructor. Perfect every asana.</p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🦾</div>
+          <h3 class="feature-title">7 Warrior Programs</h3>
+          <p>From beginner to advanced - systematic programs that guarantee results. No fluff, just progress.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">THE PROOF</h2>
+      
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I was a yoga instructor at a premium studio. After discovering YogaAsana, I quit my job because this app taught me more in 1 month than 5 years of 'professional' training."</p>
+        <p class="testimonial-author">— Priya K., Former Studio Instructor</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <p class="testimonial-text">"90 days with YogaAsana and I'm more flexible than people who've done yoga for years. The AI correction spotted flaws in my form that no instructor ever noticed."</p>
+        <p class="testimonial-author">— Rohan S., Former Beginner</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I was spending ₹15,000/month on private lessons. YogaAsana's advanced programs are BETTER. My instructor actually asked ME for tips after 2 months."</p>
+        <p class="testimonial-author">— Ananya M., Corporate Executive</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="download">
+    <div class="container">
+      <h2>STOP BEING SCAMMED BY STUDIOS</h2>
+      <p style="font-size: 1.5rem; margin-bottom: 40px;">Download YogaAsana now and join the yoga elite</p>
+      
+      <a href="https://github.com/tuber-cell/YogaAsanaDownloads/releases/download/v1.0.0/YogaAsana.apk" class="cta-button" download>
+        ⬇ DOWNLOAD NOW - ₹99/MONTH
+      </a>
+      
+      <p style="margin-top: 20px; font-weight: 700; text-transform: uppercase;">No free trial. No bullshit. Just results.</p>
+    </div>
+  </section>
+
+  <script>
+    // Simple animation on scroll
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.feature-card, .testimonial-card');
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      cards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+        card.style.transition = 'all 0.6s ease';
+        observer.observe(card);
+      });
+    });
+  </script>
 </body>
 </html>
