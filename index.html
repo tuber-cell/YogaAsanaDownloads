@@ -241,6 +241,39 @@
       text-transform: uppercase;
       letter-spacing: 3px;
     }
+
+    /* APP SCREENSHOTS */
+    .app-screenshots {
+      margin: 40px auto;
+      max-width: 1000px;
+    }
+    
+    .app-screenshots h3 {
+      color: var(--gold);
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 2px;
+    }
+    
+    .screenshot-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    
+    .screenshot-grid img {
+      width: 200px;
+      border: 2px solid var(--gold);
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    
+    .screenshot-grid img:hover {
+      transform: scale(1.05);
+    }
     
     /* RESPONSIVE */
     @media (max-width: 768px) {
@@ -258,6 +291,20 @@
       
       .final-cta h2 {
         font-size: 2.5rem;
+      }
+
+      .screenshot-grid {
+        gap: 10px;
+      }
+      
+      .screenshot-grid img {
+        width: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .screenshot-grid img {
+        width: 120px;
       }
     }
   </style>
@@ -283,6 +330,18 @@
       <a href="https://github.com/tuber-cell/YogaAsanaDownloads/releases/download/v1.0.0/YogaAsana.apk" class="cta-button" download>
         ⬇ DOWNLOAD YOGASANA NOW
       </a>
+
+      <div class="app-screenshots">
+        <h3>SEE THE APP IN ACTION</h3>
+        <div class="screenshot-grid">
+          <!-- Replace these with your actual image files when you upload them -->
+          <img src="screenshot1.jpg" alt="YogaAsana app home screen">
+          <img src="screenshot2.jpg" alt="YogaAsana pose library">
+          <img src="screenshot3.jpg" alt="YogaAsana workout in progress">
+          <img src="screenshot4.jpg" alt="YogaAsana progress tracking">
+        </div>
+      </div>
+
       <p class="small-text">Join 113,000+ elite yogis who left studios behind</p>
     </div>
   </section>
